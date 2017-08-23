@@ -1,22 +1,126 @@
-<html>
-	<head>
-		<title>Shuen Yasui</title>
-		<style>
-		body {
-			font-family: Helvetica;
-			font-size: 0.8em;
-		}
-		</style>
-	</head>
-	<body>
-		<p></p>
-	
-		<p align=center>
-		2017 Copyright. All rights reserved.
-		</p>
-		
-		<p align=center>
-		This page is under construction.
-		</p>
-	</body>
+<h<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+        html {
+            overflow-y: scroll;
+        }
+        body {
+            background-color: rgb(232, 234, 237);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .8em;
+            color: black;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        hr {
+            border: 0px;
+            border-top: 1px dashed black;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color:#34343d;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+            .navbar a {
+                display: block;
+                float: left;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+            }
+        .namebox{
+            display: block;
+            padding: 10px;
+            margin: auto;
+            float: right;
+            color: orange;
+
+        }
+            .namebox a {
+                display: block;
+                float: left;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+            }
+        .navbarbox {
+            width: 800px;
+            margin:auto;
+        }
+        
+        .navbar a:hover{
+            background-color: white;
+            color:black;
+        }
+        .mainbox{
+            background-color:white;
+            width: 760px;
+            margin: auto;
+            margin-top: 0px;
+            padding: 20px
+        }
+            .mainbox span {
+                display: block;
+                padding: 20px;
+            }
+            .mainbox img {
+                display: block;
+                margin: auto;
+            }
+        .footer {
+            display: block;
+            background-color: #34343d;
+            width: 760px;
+            margin: auto;
+            padding:20px;
+            padding-top:5px;
+        }
+        .footerbox {
+            display: block;
+            margin: auto;
+            color: white;
+            float: right;
+        }
+    </style>
+    <head>
+        <title>Shuen Yasui's Profile Website</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbarbox">
+                <a href="index.html">PROJECTS</a>
+                <a href="contacts.html">CONTACT</a>
+                <div class="namebox">SHUEN YASUI</div>
+            </div>
+        </div>
+        <div class="mainbox">
+            <span></span>
+            <h1>Project: Correlation between GDP per capita versus number of Secure Internet Servers in 2016</h1>
+            <p>Date: 8/20/2017</p>
+            <p>The Woldbank not only offers economic metrics such as income levels and national GDP of various countries, it also has interesting statistics on topics such as infrastructure, health, social development and technology. In this project we look at the correlation between a nations GDP per capita index to the number of secure internet servers per 1 million people.</p>
+            <p>I wrote a Python script which requests data from the Worldbank API via URL call. The data sets are downloaded in JSON format and then parsed to extract the necessary information onto a .txt file. Using the visualization library <a href=https://seaborn.pydata.org />Seaborn</a> and the data analysis library <a href=http://pandas.pydata.org>Pandas</a> the script generates a scatter plot with first and second order regression fit.</p>
+            <p>Results:</p>
+            <p>In general there exists a liner correlation between a nations GDP per capita to its number of secure internet servers. This follows the reasonable logic that as a nation becomes wealthier, the number of secure internet servers hosted there will also increase. Considering internet servers are an important part of a nation’s communication infrastructure and the technology required for its implementation, the number of internet servers in a country can be used to estimate its wealth. In this dataset there are some outliers including nations such as Switzerland, Iceland, Netherlands and Korea where the number of internet servers hosted there are higher when compared to other nations of similar GDP per capita. Examples of the opposite can also be seen for nations where the number of internet servers are comparably less than other nations of similar GDP per capita. Macao, China is an outliner which can be partially attributed to its state status. Macao is Special Administrative Region (SAR) of China meaning it is more similar to a region rather than a sovereign state. It is also one of the world’s smallest regions and its economy largely depends on service and tourism.</p>
+            <p><a href="https://github.com/shuen-yasui/WorldBankGrapherGDPvdInternetServers">Source available on GitHub</a></p>
+            <img src="images/GDPperCapitalvsSecIntServ2016Small.png"/>
+            <hr />
+            <h1>Project: Investigating direct link sources on the /r/news subreddit</h1>
+            <p>Date: 8/9/2017</p>
+            <p>/r/news is a subreddit on the social aggregation website <a href=http://www.reddit.com>Reddit</a>. With approximately 14.9 million subscribers as of August 2017, /r/news is considered to be a high traffic subreddit. There, users can submit content which links to external sources so long as it follows the subreddit rules which are, as of writing this project: Posts will likely be removed if it is not news, is an opinion/analysis or advocacy piece, primarily concerns politics, has a title not taken from the article, has a pay wall or steals content, covers an already-submitted story, violates reddit's site-wide rules.</p>
+            <p>To analyze posts on /r/news I wrote a Python script using the <a href=https://praw.readthedocs.io>PRAW</a> (The Python Reddit API Wrapper) library to interface reddit’s API. The script extracts information of direct links submitted between January 1, 2017 and August 1, 2017. Information of 2327 posts were collected. The script then extracted the top 40 most frequently linked sources and displayed its frequency in a bar graph. Data visualization was achieved using the visualization library <a href=https://seaborn.pydata.org />Seaborn</a> and the data analysis library <a href=http://pandas.pydata.org>Pandas</a>.</p>
+            <p>Results:</p>
+            <p>The most frequently linked source on /r/news between January 2017 and July 2017 is reuters.com an international news agency headquartered in London, England. Interestingly the top 4 linked source Reuters, BBC, The Guardian and Independent are all news agencies based in London, England. Only at 5th place do we see the first news source headquartered in USA which is NY Times.</p>
+            <p><a href="https://github.com/shuen-yasui/RedditNewsSourceScript">Source available on GitHub</a></p>
+            <img src="images/newsSourceGraphJan2017toJuly2017small.png"/>
+        </div>
+        <div class="footer">
+            <div class="footerbox">2017 - SHUEN YASUI</div>
+        </div>
+    </body>
 </html>
