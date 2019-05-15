@@ -36,13 +36,13 @@
                 top: 0;
                 width: 100%;
             }
-                .navbar a {
-                    display: block;
-                    float: left;
-                    padding: 10px;
-                    color: white;
-                    text-decoration: none;
-                }
+			.navbar a {
+				display: block;
+				float: left;
+				padding: 10px;
+				color: white;
+				text-decoration: none;
+			}
             .namebox{
                 display: block;
                 padding: 10px;
@@ -51,13 +51,13 @@
                 color: orange;
 
             }
-                .namebox a {
-                    display: block;
-                    float: left;
-                    padding: 10px;
-                    color: white;
-                    text-decoration: none;
-                }
+			.namebox a {
+				display: block;
+				float: left;
+				padding: 10px;
+				color: white;
+				text-decoration: none;
+			}
             .navbarbox {
                 width: 800px;
                 margin:auto;
@@ -71,7 +71,7 @@
                 background-color:white;
                 width: 760px;
                 margin: auto;
-                margin-top: 0px;
+                margin-top: 20px;
                 padding: 20px
             }
                 .mainbox span {
@@ -108,8 +108,23 @@
             </div>
         </div>
         <div class="mainbox">
-            <span></span>
-            <h1>Project: Correlation between GDP per capita versus number of Secure Internet Servers in 2016</h1>
+			<h1>Project: Firefox Extension, Close Similar Tabs Version 2.0</h1>
+			<p>Date: 5/8/2019</p>
+			<p></p>
+			<p>Since my Close Similar Tabs browser extension for Firefox was released on mozilla.org it has been downloaded several hundred times. I’ve received useful feedback from users; I have decided to implement some of these requested features. First, a simple way to view the number of similar tabs prior to activing the close action was requested. I’ve decided to implement a dynamic counter right into the drop-down menu which is displayed when any tab is right-clicked. It works by listening for the right-click event on a tab, once activated, all open tabs are parsed; similar tabs are tallied and displayed in brackets next the Close Similar Tab menu item. The second new feature is a confirmation before closing multiple tabs. Due to limitations of the WebExtensions API, I could not use a traditional windows dialog box similar to ones found on desktop applications, In order to mimic a dialog box, the extension opens a small browser window displaying an HTML page. The small window will ask for confirmation to close multiple tab and it will display the number of tabs affected. The window will also include UI elements such as buttons and checkboxes and the option for users to diable the feature in case they do not wish to see the dialog box again. The extension’s Options page was also updated with the ability to toggle on/off the confirmation dialog.</p>
+			<p><a href="https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/">Download the Add-on for Firefox here</a></p>
+			<img style="border: black 1px solid" src="images/closeSimilarTabs2Screenshot.png">
+			<br>
+			<hr>
+			<h1>Project: Firefox Extension, Close Similar Tabs</h1>
+			<p>Date: 2/3/2018</p>
+			<p>My browser of choice is Mozzila Firefox. I find it to be fast, stable, user-friendly and I appreciate the open-source nature of the browser. I enjoy the many community developed browser extensions available online however there was one feature I really wish I had and could not find any suitable alternative. That is the ability to close multiple tabs of a specific website. When I browser the internet I tend to jump from one link to another by opening a new tab and leaving the previous tab open just in-case I need to jump back quickly without losing my place. Due to this habit the number of open tabs in the browser quickly increases to dozens or even hundreds over time and when it finally comes time to do a little “clean-up” I rather not visit every single open tab to make a decision of either closing it or leaving it open; at times I would like to close all tabs from one specific website. Thus I decided to develop a solution, the “Close Similar Tabs” extension. This small extension adds a feature to the drop-down menu activated when a user right-clicks any tab. The option “Close Similar Tabs” will parse through all open tabs and closes one which are similar to the activated tab with a single click!</p>
+			<p>I developed this extension using JavaScript, HTML, CSS and the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions API</a>. It is released on <a href="https://addons.mozilla.org">addons.mozilla.org</a></p>
+			<p><a href="https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/">Download the Add-on for Firefox here</a></p>
+			<img src="images/closeSimilarTabsScreenShot.png">
+			<br>
+			<hr>
+            <h1>Project: Python script, Correlation between GDP per capita versus number of Secure Internet Servers in 2016</h1>
             <p>Date: 8/20/2017</p>
             <p>The Woldbank not only offers economic metrics such as income levels and national GDP of various countries, it also has interesting statistics on topics such as infrastructure, health, social development and technology. In this project we look at the correlation between a nations GDP per capita index to the number of secure internet servers per 1 million people.</p>
             <p>I wrote a Python script which requests data from the Worldbank API via URL call. The data sets are downloaded in JSON format and then parsed to extract the necessary information onto a .txt file. Using the visualization library <a href="https://seaborn.pydata.org">Seaborn</a> and the data analysis library <a href="http://pandas.pydata.org">Pandas</a> the script generates a scatter plot with first and second order regression fit.</p>
@@ -118,7 +133,7 @@
             <p><a href="https://github.com/shuen-yasui/WorldBankGrapherGDPvdInternetServers">Source available on GitHub</a></p>
             <img src="images/GDPperCapitalvsSecIntServ2016Small.png" alt="Graph of GDP per capital versus Secure Internet Servers in 2016">
             <hr>
-            <h1>Project: Investigating direct link sources on the /r/news subreddit</h1>
+            <h1>Project: Python script, Investigating direct link sources on the /r/news subreddit</h1>
             <p>Date: 8/9/2017</p>
             <p>/r/news is a subreddit on the social aggregation website <a href="http://www.reddit.com">Reddit</a>. With approximately 14.9 million subscribers as of August 2017, /r/news is considered to be a high traffic subreddit. There, users can submit content which links to external sources so long as it follows the subreddit rules which are, as of writing this project: Posts will likely be removed if it is not news, is an opinion/analysis or advocacy piece, primarily concerns politics, has a title not taken from the article, has a pay wall or steals content, covers an already-submitted story, violates reddit's site-wide rules.</p>
             <p>To analyze posts on /r/news I wrote a Python script using the <a href="https://praw.readthedocs.io">PRAW</a> (The Python Reddit API Wrapper) library to interface reddit’s API. The script extracts information of direct links submitted between January 1, 2017 and August 1, 2017. Information of 2327 posts were collected. The script then extracted the top 40 most frequently linked sources and displayed its frequency in a bar graph. Data visualization was achieved using the visualization library <a href="https://seaborn.pydata.org">Seaborn</a> and the data analysis library <a href="http://pandas.pydata.org">Pandas</a>.</p>
@@ -128,7 +143,7 @@
             <img src="images/newsSourceGraphJan2017toJuly2017small.png" alt="Graph of news sources on /r/news">
         </div>
         <div class="footer">
-            <div class="footerbox">2017 - SHUEN YASUI</div>
+            <div class="footerbox">2019 - SHUEN YASUI</div>
         </div>
     </body>
 </html>
