@@ -1,104 +1,145 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-105318933-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <title>Shuen Yasui's Profile Website</title>
-    </head>
-    <body class="d-flex flex-column h-100">
-		<header>
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<div  class="container">
-						<div class="collapse navbar-collapse" id="navbarText">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active">
-								<a class="nav-link" href="index.html">PROJECTS<span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-								<a class="nav-link" href="contacts.html">CONTACT</a>
-								</li>
-								</li>
-							</ul>
-							<span class="navbar-text">SHUEN YASUI</span>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<nav class="navbar fixed-bottom navbar-light bg-light">
-				2019 - SHUEN YASUI
-			</nav>
-		</header>
-		<main role="main" class="flex-shrink-0">
-		
-			<div class="jumbotron jumbotron-fluid">
-				<div class="container">
-					<h1 class="display-4">PROJECTS</h1>
-					<p class="lead">Collection of projects</p>
-				</div>
-			</div>
-			<div class="container" style="padding-top:0px">
-				<h1>HTML5 Animation - Double Helix</h1>
-				<p>Date: 5/15/2019</p>
-				<p></p>
-				<p>I started this project to experiment with the canvas element in HTML5. It started with simple circles drawn on the canvas which I then animated in JavaScript. I gave each circle a repeating elliptical path then drew a line joining coupled pairs. As each circle rotates along its path it will scale in size slightly, adding depth to the animation. This became a single layer which was then repeated in a stacked pattern. Each layer was given a unique velocity depending on its y position, this gave the animation an interesting helix-like effect. I then finally added a fade effect by adjusting the transparency at each layer also dependent to its y position. No frameworks, libraries or templates used.</p>
-				<p><a href ="https://github.com/shuen-yasui/HTML5-DoubleHelixEffect">Source available on GitHub</a></p>
-				<p>View the animation here: <a href="DoubleHelixEffect.html">Double Helix</p>
-				<img src="images/doublehelix.png"></a>
-				<br>
-				<hr>
-				<h1>Firefox Extension, Close Similar Tabs Version 2.0</h1>
-				<p>Date: 5/8/2019</p>
-				<p></p>
-				<p>Since my Close Similar Tabs browser extension for Firefox was released on mozilla.org it has been downloaded several hundred times. I’ve received useful feedback from users; I have decided to implement some of these requested features. First, a simple way to view the number of similar tabs prior to activing the close action was requested. I’ve decided to implement a dynamic counter right into the drop-down menu which is displayed when any tab is right-clicked. It works by listening for the right-click event on a tab, once activated, all open tabs are parsed; similar tabs are tallied and displayed in brackets next the Close Similar Tab menu item. The second new feature is a confirmation before closing multiple tabs. Due to limitations of the WebExtensions API, I could not use a traditional windows dialog box similar to ones found on desktop applications, In order to mimic a dialog box, the extension opens a small browser window displaying an HTML page. The small window will ask for confirmation to close multiple tab and it will display the number of tabs affected. The window will also include UI elements such as buttons and checkboxes and the option for users to diable the feature in case they do not wish to see the dialog box again. The extension’s Options page was also updated with the ability to toggle on/off the confirmation dialog.</p>
-				<p><a href="https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/">Download the Add-on for Firefox here</a></p>
-				<img src="images/closeSimilarTabs2screenshot.png" style="border:black 1px solid">
-				<br>
-				<hr>
-				<h1>Firefox Extension, Close Similar Tabs</h1>
-				<p>Date: 2/3/2018</p>
-				<p>My browser of choice is Mozzila Firefox. I find it to be fast, stable, user-friendly and I appreciate the open-source nature of the browser. I enjoy the many community developed browser extensions available online however there was one feature I really wish I had and could not find any suitable alternative. That is the ability to close multiple tabs of a specific website. When I browser the internet I tend to jump from one link to another by opening a new tab and leaving the previous tab open just in-case I need to jump back quickly without losing my place. Due to this habit the number of open tabs in the browser quickly increases to dozens or even hundreds over time and when it finally comes time to do a little “clean-up” I rather not visit every single open tab to make a decision of either closing it or leaving it open; at times I would like to close all tabs from one specific website. Thus I decided to develop a solution, the “Close Similar Tabs” extension. This small extension adds a feature to the drop-down menu activated when a user right-clicks any tab. The option “Close Similar Tabs” will parse through all open tabs and closes one which are similar to the activated tab with a single click!</p>
-				<p>I developed this extension using JavaScript, HTML, CSS and the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions API</a>. It is released on <a href="https://addons.mozilla.org">addons.mozilla.org</a></p>
-				<p><a href="https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/">Download the Add-on for Firefox here</a></p>
-				<img src="images/closeSimilarTabsScreenShot.png">
-				<br>
-				<hr>
-				<h1>Python script, Correlation between GDP per capita versus number of Secure Internet Servers in 2016</h1>
-				<p>Date: 8/20/2017</p>
-				<p>The Woldbank not only offers economic metrics such as income levels and national GDP of various countries, it also has interesting statistics on topics such as infrastructure, health, social development and technology. In this project we look at the correlation between a nations GDP per capita index to the number of secure internet servers per 1 million people.</p>
-				<p>I wrote a Python script which requests data from the Worldbank API via URL call. The data sets are downloaded in JSON format and then parsed to extract the necessary information onto a .txt file. Using the visualization library <a href="https://seaborn.pydata.org">Seaborn</a> and the data analysis library <a href="http://pandas.pydata.org">Pandas</a> the script generates a scatter plot with first and second order regression fit.</p>
-				<p>Results:</p>
-				<p>In general there exists a liner correlation between a nations GDP per capita to its number of secure internet servers. This follows the reasonable logic that as a nation becomes wealthier, the number of secure internet servers hosted there will also increase. Considering internet servers are an important part of a nation’s communication infrastructure and the technology required for its implementation, the number of internet servers in a country can be used to estimate its wealth. In this dataset there are some outliers including nations such as Switzerland, Iceland, Netherlands and Korea where the number of internet servers hosted there are higher when compared to other nations of similar GDP per capita. Examples of the opposite can also be seen for nations where the number of internet servers are comparably less than other nations of similar GDP per capita. Macao, China is an outliner which can be partially attributed to its state status. Macao is Special Administrative Region (SAR) of China meaning it is more similar to a region rather than a sovereign state. It is also one of the world’s smallest regions and its economy largely depends on service and tourism.</p>
-				<p><a href="https://github.com/shuen-yasui/WorldBankGrapherGDPvdInternetServers">Source available on GitHub</a></p>
-				<img src="images/GDPperCapitalvsSecIntServ2016Small.png" alt="Graph of GDP per capital versus Secure Internet Servers in 2016">
-				<hr>
-				<h1>Python script, Investigating direct link sources on the /r/news subreddit</h1>
-				<p>Date: 8/9/2017</p>
-				<p>/r/news is a subreddit on the social aggregation website <a href="http://www.reddit.com">Reddit</a>. With approximately 14.9 million subscribers as of August 2017, /r/news is considered to be a high traffic subreddit. There, users can submit content which links to external sources so long as it follows the subreddit rules which are, as of writing this project: Posts will likely be removed if it is not news, is an opinion/analysis or advocacy piece, primarily concerns politics, has a title not taken from the article, has a pay wall or steals content, covers an already-submitted story, violates reddit's site-wide rules.</p>
-				<p>To analyze posts on /r/news I wrote a Python script using the <a href="https://praw.readthedocs.io">PRAW</a> (The Python Reddit API Wrapper) library to interface reddit’s API. The script extracts information of direct links submitted between January 1, 2017 and August 1, 2017. Information of 2327 posts were collected. The script then extracted the top 40 most frequently linked sources and displayed its frequency in a bar graph. Data visualization was achieved using the visualization library <a href="https://seaborn.pydata.org">Seaborn</a> and the data analysis library <a href="http://pandas.pydata.org">Pandas</a>.</p>
-				<p>Results:</p>
-				<p>The most frequently linked source on /r/news between January 2017 and July 2017 is reuters.com an international news agency headquartered in London, England. Interestingly the top 4 linked source Reuters, BBC, The Guardian and Independent are all news agencies based in London, England. Only at 5th place do we see the first news source headquartered in USA which is NY Times.</p>
-				<p><a href="https://github.com/shuen-yasui/RedditNewsSourceScript">Source available on GitHub</a></p>
-				<img src="images/newsSourceGraphJan2017toJuly2017small.png" alt="Graph of news sources on /r/news">
-			</div>
-		</main>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-		</script>
-		<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
-		</script>
-		<script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
-		</script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-105318933-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Shuen Yasui's Profile Website</title>
+</head>
+
+<body class="d-flex flex-column h-100" style="padding-bottom: 100px">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">PROJECTS<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              </li>
+            </ul>
+            <span class="navbar-text">SHUEN YASUI</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      2019 - SHUEN YASUI
+    </nav>
+  </header>
+  <main role="main" class="flex-shrink-0">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">PROJECTS</h1>
+        <p class="lead">A showcase of my coding projects - Continuous learning and exploration through creative works:</p>
+      </div>
+    </div>
+    <div class="container">
+      <h3>Website Redesign with Bootstrap</h3>
+      <p>Date: 5/17/2019</p>
+      <p></p>
+      <p>I've redesigned the website using the <a href="https://getbootstrap.com/">bootstrap</a> framework. Utilizing this framework the website is now responsive to different screen sizes and useability has improved significantly when viewed on mobile, whereas the previous version was built specificaly for desktop users.</p>
+      <p><a href="https://github.com/shuen-yasui/ShuenYasuiWebsite">Source available on GitHub</a></p>
+      <br>
+      <hr>
+      <h3>HTML5 Animation - Double Helix</h3>
+      <p>Date: 5/15/2019</p>
+      <p></p>
+      <p>I started this project to experiment with the canvas element in HTML5. It started with simple circles drawn on the canvas which I then animated in JavaScript. I gave each circle a repeating elliptical path then drew a line joining coupled
+        pairs. As each circle rotates along its path it will scale in size slightly, adding depth to the animation. This became a single layer which was then repeated in a stacked pattern. Each layer was given a unique velocity depending on its y
+        position, this gave the animation an interesting helix-like effect. I then finally added a fade effect by adjusting the transparency at each layer also dependent to its y position. No frameworks, libraries or templates used.</p>
+      <p><a href="https://github.com/shuen-yasui/HTML5-DoubleHelixEffect">Source available on GitHub</a></p>
+      <p>View the animation here: <a href="DoubleHelixEffect.html">Double Helix</p>
+      <img class="img-fluid rounded-circle mx-auto d-block" src="images/doublehelix.png"></a>
+      <br>
+      <hr>
+      <h3>Firefox Extension, Close Similar Tabs Version 2.0</h3>
+      <p>Date: 5/8/2019</p>
+      <p></p>
+      <p>Since my Close Similar Tabs browser extension for Firefox was released on mozilla.org it has been downloaded several hundred times. I’ve received useful feedback from users; I have decided to implement some of these requested features.
+        First, a simple way to view the number of similar tabs prior to activing the close action was requested. I’ve decided to implement a dynamic counter right into the drop-down menu which is displayed when any tab is right-clicked. It works by
+        listening for the right-click event on a tab, once activated, all open tabs are parsed; similar tabs are tallied and displayed in brackets next the Close Similar Tab menu item. The second new feature is a confirmation before closing multiple
+        tabs. Due to limitations of the WebExtensions API, I could not use a traditional windows dialog box similar to ones found on desktop applications, In order to mimic a dialog box, the extension opens a small browser window displaying an HTML
+        page. The small window will ask for confirmation to close multiple tab and it will display the number of tabs affected. The window will also include UI elements such as buttons and checkboxes and the option for users to diable the feature in
+        case they do not wish to see the dialog box again. The extension’s Options page was also updated with the ability to toggle on/off the confirmation dialog.</p>
+      <p><a href="https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/">Download the Add-on for Firefox here</a></p>
+      <img class="img-fluid border border-dark rounded mx-auto d-block" src="images/closeSimilarTabs2screenshot.png">
+      <br>
+      <hr>
+      <h3>Firefox Extension, Close Similar Tabs</h3>
+      <p>Date: 2/3/2018</p>
+      <p>My browser of choice is Mozzila Firefox. I find it to be fast, stable, user-friendly and I appreciate the open-source nature of the browser. I enjoy the many community developed browser extensions available online however there was one
+        feature I really wish I had and could not find any suitable alternative. That is the ability to close multiple tabs of a specific website. When I browser the internet I tend to jump from one link to another by opening a new tab and leaving
+        the previous tab open just in-case I need to jump back quickly without losing my place. Due to this habit the number of open tabs in the browser quickly increases to dozens or even hundreds over time and when it finally comes time to do a
+        little “clean-up” I rather not visit every single open tab to make a decision of either closing it or leaving it open; at times I would like to close all tabs from one specific website. Thus I decided to develop a solution, the “Close Similar
+        Tabs” extension. This small extension adds a feature to the drop-down menu activated when a user right-clicks any tab. The option “Close Similar Tabs” will parse through all open tabs and closes one which are similar to the activated tab with
+        a single click!</p>
+      <p>I developed this extension using JavaScript, HTML, CSS and the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">WebExtensions API</a>. It is released on <a
+          href="https://addons.mozilla.org">addons.mozilla.org</a></p>
+      <p><a href="https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/">Download the Add-on for Firefox here</a></p>
+      <img class="img-fluid mx-auto d-block" src="images/closeSimilarTabsScreenShot.png">
+      <br>
+      <hr>
+      <h3>Python script, Correlation between GDP per capita versus number of Secure Internet Servers in 2016</h3>
+      <p>Date: 8/20/2017</p>
+      <p>The Woldbank not only offers economic metrics such as income levels and national GDP of various countries, it also has interesting statistics on topics such as infrastructure, health, social development and technology. In this project we
+        look at the correlation between a nations GDP per capita index to the number of secure internet servers per 1 million people.</p>
+      <p>I wrote a Python script which requests data from the Worldbank API via URL call. The data sets are downloaded in JSON format and then parsed to extract the necessary information onto a .txt file. Using the visualization library <a
+          href="https://seaborn.pydata.org">Seaborn</a> and the data analysis library <a href="http://pandas.pydata.org">Pandas</a> the script generates a scatter plot with first and second order regression fit.</p>
+      <p>Results:</p>
+      <p>In general there exists a liner correlation between a nations GDP per capita to its number of secure internet servers. This follows the reasonable logic that as a nation becomes wealthier, the number of secure internet servers hosted there
+        will also increase. Considering internet servers are an important part of a nation’s communication infrastructure and the technology required for its implementation, the number of internet servers in a country can be used to estimate its
+        wealth. In this dataset there are some outliers including nations such as Switzerland, Iceland, Netherlands and Korea where the number of internet servers hosted there are higher when compared to other nations of similar GDP per capita.
+        Examples of the opposite can also be seen for nations where the number of internet servers are comparably less than other nations of similar GDP per capita. Macao, China is an outliner which can be partially attributed to its state status.
+        Macao is Special Administrative Region (SAR) of China meaning it is more similar to a region rather than a sovereign state. It is also one of the world’s smallest regions and its economy largely depends on service and tourism.</p>
+      <p><a href="https://github.com/shuen-yasui/WorldBankGrapherGDPvdInternetServers">Source available on GitHub</a></p>
+      <img class="img-fluid rounded mx-auto d-block" src="images/GDPperCapitalvsSecIntServ2016Small.png" alt="Graph of GDP per capital versus Secure Internet Servers in 2016">
+      <hr>
+      <h3>Python script, Investigating direct link sources on the /r/news subreddit</h3>
+      <p>Date: 8/9/2017</p>
+      <p>/r/news is a subreddit on the social aggregation website <a href="http://www.reddit.com">Reddit</a>. With approximately 14.9 million subscribers as of August 2017, /r/news is considered to be a high traffic subreddit. There, users can submit
+        content which links to external sources so long as it follows the subreddit rules which are, as of writing this project: Posts will likely be removed if it is not news, is an opinion/analysis or advocacy piece, primarily concerns politics,
+        has a title not taken from the article, has a pay wall or steals content, covers an already-submitted story, violates reddit's site-wide rules.</p>
+      <p>To analyze posts on /r/news I wrote a Python script using the <a href="https://praw.readthedocs.io">PRAW</a> (The Python Reddit API Wrapper) library to interface reddit’s API. The script extracts information of direct links submitted between
+        January 1, 2017 and August 1, 2017. Information of 2327 posts were collected. The script then extracted the top 40 most frequently linked sources and displayed its frequency in a bar graph. Data visualization was achieved using the
+        visualization library <a href="https://seaborn.pydata.org">Seaborn</a> and the data analysis library <a href="http://pandas.pydata.org">Pandas</a>.</p>
+      <p>Results:</p>
+      <p>The most frequently linked source on /r/news between January 2017 and July 2017 is reuters.com an international news agency headquartered in London, England. Interestingly the top 4 linked source Reuters, BBC, The Guardian and Independent
+        are all news agencies based in London, England. Only at 5th place do we see the first news source headquartered in USA which is NY Times.</p>
+      <p><a href="https://github.com/shuen-yasui/RedditNewsSourceScript">Source available on GitHub</a></p>
+      <img class="img-fluid rounded mx-auto d-block" src="images/newsSourceGraphJan2017toJuly2017small.png" alt="Graph of news sources on /r/news">
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script>
+    window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
