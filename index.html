@@ -1,25 +1,10 @@
-﻿
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="h-100">
+
 <head>
   <meta charset="UTF-8">
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-105318933-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <title>Shuen Yasui's Profile Website</title>
 </head>
 
@@ -31,18 +16,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="container">
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">PROJECTS<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              </li>
-            </ul>
-            <span class="navbar-text">SHUEN YASUI</span>
-          </div>
+          <ul class="navbar-nav mr-auto float-left">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">PROJECTS<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            </li>
+          </ul>
+          <span class="navbar-text float-right">SHUEN YASUI</span>
         </div>
       </div>
     </nav>
@@ -53,7 +36,7 @@
   <main role="main" class="flex-shrink-0">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">PROJECTS</h1>
+        <h1 class="display-4" style="padding-top:20px">PROJECTS</h1>
         <p class="lead">A showcase of my coding projects - Continuous learning and exploration through creative works:</p>
       </div>
     </div>
@@ -61,7 +44,8 @@
       <h3>Website Redesign with Bootstrap</h3>
       <p>Date: 5/17/2019</p>
       <p></p>
-      <p>I've redesigned the website using the <a href="https://getbootstrap.com/">bootstrap</a> framework. Utilizing this framework the website is now responsive to different screen sizes and useability has improved significantly when viewed on mobile, whereas the previous version was built specificaly for desktop users.</p>
+      <p>I've redesigned the website using the <a href="https://getbootstrap.com/">bootstrap</a> framework. Utilizing this framework the website is now responsive to different screen sizes and useability has improved significantly when viewed on
+        mobile, whereas the previous version was built specificaly for desktop users.</p>
       <p><a href="https://github.com/shuen-yasui/ShuenYasuiWebsite">Source available on GitHub</a></p>
       <br>
       <hr>
@@ -133,13 +117,12 @@
       <img class="img-fluid rounded mx-auto d-block" src="images/newsSourceGraphJan2017toJuly2017small.png" alt="Graph of news sources on /r/news">
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script>
-    window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
-  </script>
-  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
-  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>(function(i, s, o, g, r, a, m) {i['GoogleAnalyticsObject'] = r;i[r] = i[r] || function() {(i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date();a = s.createElement(o),m = s.getElementsByTagName(o)[0];a.async = 1;a.src = g;m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');ga('create', 'UA-105318933-1', 'auto');ga('send', 'pageview');</script>
 </body>
 
 </html>
