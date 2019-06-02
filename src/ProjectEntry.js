@@ -31,16 +31,16 @@ class ProjectEntry extends Component {
       }
       return (
       <div key={data.id}>
-        <div><h1>{data.title}</h1></div>
-        <div><h5>Date: {data.date}</h5></div>
+        <div><h2>{data.title}</h2></div>
+        <p>Date: {data.date}</p>
         <div>{bodyData}</div>
         <div align="center">{image}</div>
+        <hr />
       </div>
       );
     });
     return (
       <div>
-        <div>Projects:</div>
         <div>{readData}</div>
       </div>
     );

@@ -1,28 +1,32 @@
 [
     {
         "id": 1,
-        "title": "Hello World",
-        "date": "1/1/2020",
+        "title": "HTML5 Animation - Solar System",
+        "date": "5/25/2019",
         "body":
         [
           {
-            "text": "Try Reactjs is awesome. Can't wait to learn more "
-          },
-          {
-            "link": "google",
-            "src": "http://www.google.com"
-          },
-          {
-            "text": " test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1"
+            "text": "I made this animation similating our solar system. The circles drawn on a HTML5 canvas represents different planets. Their orbit speed ratio is based off actual data and gives the animation a simple visual comparison, for example it takes Mars roughly twice as long to complete a orbit around the sun. Rather than leaving the orbit path blank I opted to draw strings of faint circles for each path. The animation is scaled down in the vertical axis giving it an added effect of depth. I've also added a MouseOver eventListener to make the animation interactive, it changes a planet's color red and display its name when the mouse is hovered over it. Note, the planets' size, distance and location are not scaled to real proportions. Made using HTML5 and JavaScript."
           },
           {
             "break": 1
           },
           {
-            "text": " test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 "
+            "link": "Source available on GitHub",
+            "src": "https://github.com/shuen-yasui/HTML5-SolarSystem"
           },
           {
-            "text": " test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 test3 "
+            "break": 2
+          },
+          {
+            "text": "View the animation here: "
+          },
+          {
+            "link": "Solar System",
+            "src": "http://www.shuenyasui.com/SolarSystem.html"
+          },
+          {
+            "break": 3
           }
         ],
         "image":
@@ -34,19 +38,27 @@
     },
     {
         "id": 2,
-        "title": "Setup React",
-        "date": "1/1/2020",
+        "title": "Website Redesign with Bootstrap",
+        "date": "5/17/2019",
         "body":
         [
           {
-            "text": "Setting up react is easy. Learn more about it!"
+            "text": "I've redesigned the website using the "
+          },
+          {
+            "link": "bootstrap",
+            "src": "https://getbootstrap.com/"
+          },
+          {
+            "text": " framework. Utilizing this framework the website is now responsive to different screen sizes and useability has improved significantly when viewed on mobile, whereas the previous version was built specificaly for desktop users."
+          },
+          {
+            "break": 1
+          },
+          {
+            "link": "Source available on GitHub",
+            "src": "https://github.com/shuen-yasui/ShuenYasuiWebsite"
           }
-        ],
-        "image":
-        {
-          "src": "images/solarsystem01.png",
-          "type": "rounded",
-          "link":"http://www.google.com"
-        }
+        ]
     }
 ]
