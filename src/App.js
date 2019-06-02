@@ -4,42 +4,43 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+
+let pageState = null;
 
 function App() {
+
+  pageState = <ProjectEntry />;
+
   return (
     <div className="App">
       <header className="App-header">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
           <Container>
-            <Navbar.Brand>Shuen Yasui</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="#">Projects</Nav.Link>
-                <Nav.Link href="#">About</Nav.Link>
-                  <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="#" onClick={(e) => onMouseClick(e,"projects")}>PROJECTS</Nav.Link>
+                <Nav.Link href="#" onClick={(e) => onMouseClick(e,"about")}>ABOUT</Nav.Link>
               </Nav>
-              <Nav>
-                Shuen Yasui
-              </Nav>
+              <Navbar.Brand>SHUEN YASUI</Navbar.Brand>
             </Navbar.Collapse>
           </Container>
         </Navbar>
         <Jumbotron fluid>
           <Container>
-            <h1>Projects</h1>
-            <p>A showcase of my coding projects - Continuous learning and exploration through creative works:</p>
+            <h1 className="display-4">PROJECTS</h1>
+            <p className="lead">A showcase of my coding projects - Continuous learning and exploration through creative works:</p>
           </Container>
         </Jumbotron>
         <Container>
-          <ProjectEntry />
+          {pageState}
         </Container>
       </header>
     </div>
   );
+}
+function onMouseClick(e,type){
+  console.log("clicked ",type);
 }
 
 export default App;

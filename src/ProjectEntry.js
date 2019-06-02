@@ -3,6 +3,10 @@ import Jdata from './projectEntryData.json';
 import Image from 'react-bootstrap/Image';
 
 class ProjectEntry extends Component {
+  constructor(props){
+    super(props)
+    console.log("const", this);
+  }
   render() {
     let readData = Jdata.map((data) => {
       let bodyData = [];
@@ -23,10 +27,10 @@ class ProjectEntry extends Component {
       }
       if (data.image) {
         if (data.image.type === "rounded") {
-          image = <a href={data.image.link}><Image src={data.image.src} rounded fluid /></a>
+          image = <a href={data.image.link}><Image src={data.image.src} className={data.image.className} rounded fluid /></a>
         }
         if (data.image.type === "roundedCircle") {
-          image = <a href={data.image.link}><Image src={data.image.src} roundedCircle fluid /></a>
+          image = <a href={data.image.link}><Image src={data.image.src} className={data.image.className} roundedCircle fluid /></a>
         }
       }
       return (
