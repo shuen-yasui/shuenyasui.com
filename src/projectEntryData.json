@@ -23,7 +23,7 @@
           },
           {
             "link": "Solar System",
-            "src": "http://www.shuenyasui.com/SolarSystem.html"
+            "src": "SolarSystem.html"
           },
           {
             "break": 3
@@ -95,7 +95,7 @@
         {
           "src":"images/doublehelix.png",
           "type":"roundedCircle",
-          "link":"http://www.google.com"
+          "link":"DoubleHelixEffect.html"
         }
     },
     {

@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import Jdata from './projectEntryData.json';
 import Image from 'react-bootstrap/Image';
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import Container from 'react-bootstrap/Container'
 
 class ProjectEntry extends Component {
-  constructor(props){
-    super(props)
-  }
-  getTitle(){
-    return "Title";
-  }
   render() {
     let readData = Jdata.map((data) => {
       let bodyData = [];
@@ -47,7 +43,13 @@ class ProjectEntry extends Component {
     });
     return (
       <div>
-        <div>{readData}</div>
+        <Jumbotron fluid>
+          <Container>
+            <h1 className="display-4">PROJECTS</h1>
+            <p className="lead">A showcase of my coding projects - Continuous learning and exploration through creative works:</p>
+          </Container>
+        </Jumbotron>
+        <Container>{readData}</Container>
       </div>
     );
   }
