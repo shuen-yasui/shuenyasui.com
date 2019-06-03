@@ -5,7 +5,9 @@ import Image from 'react-bootstrap/Image';
 class ProjectEntry extends Component {
   constructor(props){
     super(props)
-    console.log("const", this);
+  }
+  getTitle(){
+    return "Title";
   }
   render() {
     let readData = Jdata.map((data) => {
