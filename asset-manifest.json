@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ShuenYasuiWebsite/static/css/main.00934fa3.chunk.css",
-    "main.js": "/ShuenYasuiWebsite/static/js/main.5a7a2b4d.chunk.js",
-    "main.js.map": "/ShuenYasuiWebsite/static/js/main.5a7a2b4d.chunk.js.map",
-    "runtime~main.js": "/ShuenYasuiWebsite/static/js/runtime~main.e5802d5f.js",
-    "runtime~main.js.map": "/ShuenYasuiWebsite/static/js/runtime~main.e5802d5f.js.map",
-    "static/css/2.22a7d4ef.chunk.css": "/ShuenYasuiWebsite/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.2cb9eafd.chunk.js": "/ShuenYasuiWebsite/static/js/2.2cb9eafd.chunk.js",
-    "static/js/2.2cb9eafd.chunk.js.map": "/ShuenYasuiWebsite/static/js/2.2cb9eafd.chunk.js.map",
-    "index.html": "/ShuenYasuiWebsite/index.html",
-    "precache-manifest.153fb1d37faaefa8adea3cdc4c7fae5d.js": "/ShuenYasuiWebsite/precache-manifest.153fb1d37faaefa8adea3cdc4c7fae5d.js",
-    "service-worker.js": "/ShuenYasuiWebsite/service-worker.js",
-    "static/css/2.22a7d4ef.chunk.css.map": "/ShuenYasuiWebsite/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.00934fa3.chunk.css.map": "/ShuenYasuiWebsite/static/css/main.00934fa3.chunk.css.map"
+    "main.css": "/static/css/main.00934fa3.chunk.css",
+    "main.js": "/static/js/main.746d55f5.chunk.js",
+    "main.js.map": "/static/js/main.746d55f5.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.2cb9eafd.chunk.js": "/static/js/2.2cb9eafd.chunk.js",
+    "static/js/2.2cb9eafd.chunk.js.map": "/static/js/2.2cb9eafd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ec7eb592b9d44a394922eb87b2f049b4.js": "/precache-manifest.ec7eb592b9d44a394922eb87b2f049b4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.00934fa3.chunk.css.map": "/static/css/main.00934fa3.chunk.css.map"
   }
 }
