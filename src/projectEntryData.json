@@ -1,6 +1,39 @@
 [
     {
-        "id": 1,
+        "id": 8,
+        "title": "Redesign using react.js and react-bootstrap",
+        "date": "6/3/2019",
+        "body":
+        [
+          {
+            "text": "This website was rebuilt from the ground up using react.js and react-bootstrap. The website now functions similar to a single-page webapp thanks to the utilities provided by the react.js library. This is a big improvement from the previous version which was mostly a static page website. The new website is built using multiple react components and the content is stored separately in a JSON file; this keeps the framework code clean, modular and separated from the content. The react-bootstrap allows me to keep much of the responsive style implemented in the previous version."
+          },
+          {
+            "break": 1
+          },
+          {
+            "link": "Source available on GitHub",
+            "src": "https://github.com/shuen-yasui/ShuenYasuiWebsite"
+          }
+        ],
+        "image":
+        [
+          {
+            "src":"images/React-icon.svg",
+            "type":"rounded",
+            "className":"svg2",
+            "link":"https://reactjs.org/"
+          },
+          {
+            "src":"images/reactbootstrap.svg",
+            "type":"rounded",
+            "className":"svg",
+            "link":"https://react-bootstrap.github.io/"
+          }
+        ]
+    },
+    {
+        "id": 7,
         "title": "HTML5 Animation - Solar System",
         "date": "5/25/2019",
         "body":
@@ -30,14 +63,16 @@
           }
         ],
         "image":
-        {
-          "src":"images/solarsystem01.png",
-          "type":"roundedCircle",
-          "link":"http://www.google.com"
-        }
+        [
+          {
+            "src":"images/solarsystem01.png",
+            "type":"roundedCircle",
+            "link":"https://github.com/shuen-yasui/HTML5-SolarSystem"
+          }
+        ]
     },
     {
-        "id": 2,
+        "id": 6,
         "title": "Website Redesign with Bootstrap",
         "date": "5/17/2019",
         "body":
@@ -62,7 +97,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "HTML5 Animation - Double Helix",
         "date": "5/15/2019",
         "body":
@@ -92,11 +127,13 @@
           }
         ],
         "image":
-        {
-          "src":"images/doublehelix.png",
-          "type":"roundedCircle",
-          "link":"DoubleHelixEffect.html"
-        }
+        [
+          {
+            "src":"images/doublehelix.png",
+            "type":"roundedCircle",
+            "link":"DoubleHelixEffect.html"
+          }
+        ]
     },
     {
         "id": 4,
@@ -119,15 +156,17 @@
           }
         ],
         "image":
-        {
-          "src":"images/closeSimilarTabs2screenshot.png",
-          "type":"rounded",
-          "link":"https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/",
-          "className":"border border-dark"
-        }
+        [
+          {
+            "src":"images/closeSimilarTabs2screenshot.png",
+            "type":"rounded",
+            "link":"https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/",
+            "className":"border border-dark"
+          }
+        ]
     },
     {
-        "id": 5,
+        "id": 3,
         "title": "Firefox Extension, Close Similar Tabs",
         "date": "2/3/2018",
         "body":
@@ -157,14 +196,16 @@
           }
         ],
         "image":
-        {
-          "src":"images/closeSimilarTabsScreenShot.png",
-          "type":"rounded",
-          "link":"https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/"
-        }
+        [
+          {
+            "src":"images/closeSimilarTabsScreenShot.png",
+            "type":"rounded",
+            "link":"https://addons.mozilla.org/en-US/firefox/addon/close-similar-tabs/"
+          }
+        ]
     },
     {
-        "id": 6,
+        "id": 2,
         "title": "Python script, Correlation between GDP per capita versus number of Secure Internet Servers in 2016",
         "date": "8/20/2017",
         "body":
@@ -210,13 +251,15 @@
           }
         ],
         "image":
-        {
-          "src":"images/GDPperCapitalvsSecIntServ2016Small.png",
-          "type":"rounded"
-        }
+        [
+          {
+            "src":"images/GDPperCapitalvsSecIntServ2016Small.png",
+            "type":"rounded"
+          }
+        ]
     },
     {
-        "id": 7,
+        "id": 1,
         "title": "Python script, Investigating direct link sources on the /r/news subreddit",
         "date": "8/9/2017",
         "body":
@@ -276,10 +319,12 @@
           }
         ],
         "image":
-        {
-          "src":"images/newsSourceGraphJan2017toJuly2017small.png",
-          "type":"rounded",
-          "link": "images/newsSourceGraphJan2017toJuly2017.png"
-        }
+        [
+          {
+            "src":"images/newsSourceGraphJan2017toJuly2017small.png",
+            "type":"rounded",
+            "link": "images/newsSourceGraphJan2017toJuly2017.png"
+          }
+        ]
     }
 ]

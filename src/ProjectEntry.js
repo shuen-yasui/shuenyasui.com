@@ -8,7 +8,7 @@ class ProjectEntry extends Component {
   render() {
     let readData = Jdata.map((data) => {
       let bodyData = [];
-      let image = null;
+      let image = [];
       if (data.body) {
         for (var i = 0; i < data.body.length; i++) {
           let b = data.body[i];
@@ -24,11 +24,14 @@ class ProjectEntry extends Component {
         }
       }
       if (data.image) {
-        if (data.image.type === "rounded") {
-          image = <a href={data.image.link}><Image src={data.image.src} className={data.image.className} rounded fluid /></a>
-        }
-        if (data.image.type === "roundedCircle") {
-          image = <a href={data.image.link}><Image src={data.image.src} className={data.image.className} roundedCircle fluid /></a>
+        for (var i = 0; i < data.image.length; i++) {
+          let im = data.image[i];
+          if (im.type === "rounded") {
+            image.push(<a href={im.link}><Image src={im.src} className={im.className} rounded fluid /></a>);
+          }
+          if (im.type === "roundedCircle") {
+            image.push(<a href={im.link}><Image src={im.src} className={im.className} roundedCircle fluid /></a>);
+          }
         }
       }
       return (
