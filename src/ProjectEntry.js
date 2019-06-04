@@ -10,7 +10,7 @@ class ProjectEntry extends Component {
       let bodyData = [];
       let image = [];
       if (data.body) {
-        for (var i = 0; i < data.body.length; i++) {
+        for (let i = 0; i < data.body.length; i++) {
           let b = data.body[i];
           if (b.text) {
             bodyData.push(b.text);
@@ -24,7 +24,7 @@ class ProjectEntry extends Component {
         }
       }
       if (data.image) {
-        for (var i = 0; i < data.image.length; i++) {
+        for (let i = 0; i < data.image.length; i++) {
           let im = data.image[i];
           if (im.type === "rounded") {
             image.push(<a href={im.link}><Image src={im.src} className={im.className} rounded fluid /></a>);
