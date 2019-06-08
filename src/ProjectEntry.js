@@ -35,7 +35,7 @@ class ProjectEntry extends Component {
         }
       }
       return (
-      <div key={data.id}>
+      <div id={'entry'+data.id.toString()} key={data.id}>
         <div><h2>{data.title}</h2></div>
         <p>Date: {data.date}</p>
         <div>{bodyData}</div>
@@ -46,7 +46,7 @@ class ProjectEntry extends Component {
     });
     return (
       <div>
-        <Jumbotron fluid>
+        <Jumbotron fluid id="jumbo">
           <Container>
             <h1 className="display-4">PROJECTS</h1>
             <p className="lead">A showcase of my coding projects - Continuous learning and exploration through creative works:</p>
