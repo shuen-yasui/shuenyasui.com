@@ -14,6 +14,19 @@
         {
           "link": "Source available on GitHub",
           "src": "https://github.com/shuen-yasui/Particle-Orbiter-Mouse-Effect"
+        },
+        {
+          "break": 2
+        },
+        {
+          "text": "View the animation here: "
+        },
+        {
+          "link": "Particle Orbiter",
+          "src": "ParticleOrbiterMouseEffect.html"
+        },
+        {
+          "break": 3
         }
       ],
       "image":
@@ -32,7 +45,7 @@
         "body":
         [
           {
-            "text": "This website was rebuilt from the ground up using react.js and react-bootstrap. The website now functions similar to a single-page webapp thanks to the utilities provided by the react.js library. This is a big improvement from the previous version which was mostly a static page website. The new website is built using multiple react components and the content is stored separately in a JSON file; this keeps the framework code clean, modular and separated from the content. The react-bootstrap allows me to keep much of the responsive style implemented in the previous version."
+            "text": "Using React and React-Bootstrap I rebuilt this website and turned it into a single-page webapp. This is a big improvement from the previous version which was mostly a static page website. In order to keep the framework code clean and organized, content data is stored in a JSON file. The reactive and responsive elements are retained thanks to the React-Bootstrap library."
           },
           {
             "break": 1
