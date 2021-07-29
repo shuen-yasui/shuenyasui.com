@@ -1,5 +1,44 @@
 [
     {
+      "id": 10,
+      "title": "HTML5 Animation - Star Field",
+      "date": "7/28/2021",
+      "body":
+      [
+        {
+          "text": "This is an animation of a star field visible on a browser. The HTML5 Canvas element and JavaScript was used to create a 3D zooming effect. A layer of distant stars travels slowly for depth. Each star is recycled once it travels out-of-bounds to keep the anmation smooth. Gradually a large circle appears and grows for added artistic effect."
+        },
+        {
+          "break": 1
+        },
+        {
+          "link": "Source available on GitHub",
+          "src": ""
+        },
+        {
+          "break": 2
+        },
+        {
+          "text": "View the animation here: "
+        },
+        {
+          "link": "Star Field",
+          "src": "StarField.html"
+        },
+        {
+          "break": 3
+        }
+      ],
+      "image":
+      [
+        {
+          "src":"images/starField.png",
+          "type":"rounded",
+          "link":"StarField.html"
+        }
+      ]
+  },
+    {
       "id": 9,
       "title": "HTML5 Animation - Particle Orbiter",
       "date": "6/20/2021",
